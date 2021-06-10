@@ -1,1 +1,6 @@
 2021-05-27 00:10:42 [test_FirstPage:test_log:20][INFO]- wg
+2021-05-27 21:01:37 [tests_wg:<module>:12][INFO]- wg
+2021-05-27 21:05:53 [tests_wg:<module>:13][INFO]- wg
+2021-05-27 21:06:06 [tests_wg:<module>:13][INFO]- wg
+2021-05-27 21:09:50 [TestClass:<module>:13][INFO]- wg
+2021-05-27 21:11:35 [TestClass:test_basics:28][INFO]- +++++wg+++++

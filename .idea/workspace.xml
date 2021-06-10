@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/BasePage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/test_FirstPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/mylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/MyLogger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tests_wg.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests_wg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_inherit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/handler_2021-05-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/handler_2021-05-27.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests_wg.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -53,117 +55,30 @@
       <recent name="F:\pycharm\pytest_program" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_FirstPage.py">
-    <configuration name="MyLogger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="pytest for TestClass.TestClass.test_basics" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\pycharm\pytest_program\common\MyLogger.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_FirstPage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/test_FirstPage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_FirstPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\pycharm\pytest_program\pages\test_FirstPage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests_wg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/tests_wg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_FirstPage.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/pages/test_FirstPage.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;TestClass.TestClass.test_basics&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_FirstPage.py" />
-        <item itemvalue="Python.test_FirstPage (1)" />
-        <item itemvalue="Python.test_FirstPage" />
-        <item itemvalue="Python.tests_wg" />
-        <item itemvalue="Python.MyLogger" />
+        <item itemvalue="Python tests.pytest for TestClass.TestClass.test_basics" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -185,63 +100,22 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="05 26" />
     <option name="LAST_COMMIT_MESSAGE" value="05 26" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="375" y="86" key="CommitChangelistDialog2" timestamp="1622042127156">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="375" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1622042127156" />
-    <state x="557" y="274" key="FileChooserDialogImpl" timestamp="1622040672637">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="557" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1622040672637" />
-    <state width="1516" height="344" key="GridCell.Tab.0.bottom" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.0.center" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.0.left" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489700" />
-    <state width="1516" height="344" key="GridCell.Tab.0.right" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.1.bottom" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.1.center" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.1.left" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state width="1516" height="344" key="GridCell.Tab.1.right" timestamp="1622045489701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1516" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622045489701" />
-    <state x="278" y="164" key="SettingsEditor" timestamp="1622044457983">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="278" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622044457983" />
-    <state x="369" y="239" key="Vcs.Push.Dialog.v2" timestamp="1622042138213">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="369" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1622042138213" />
-    <state x="440" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1622043383388">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622043383388" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -255,6 +129,16 @@
           <url>file://$PROJECT_DIR$/common/MyLogger.py</url>
           <line>10</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/TestClass.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/base/BaseCase.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
