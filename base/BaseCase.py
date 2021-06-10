@@ -8,10 +8,12 @@
 @Version    :   v 0.1
 @Desc  :
 """
+import yaml
+
 from common import MyLogger
 from seleniumbase.fixtures.base_case import BaseCase
 
-from common.CommonFuncs import _get_token, _confirmLogin
+from common.CommonFuncs import _getToken, _confirmLogin
 
 
 class basecase(BaseCase):
@@ -46,6 +48,23 @@ class basecase(BaseCase):
             js = 'window.localStorage.setItem("token",%s)' % self.__token
             self.driver.excute_scripts(js)
         else:
-            __token = _get_token()
+            __token = _getToken()
             js = 'window.localStorage.setItem("token",%s)' % self.__token
             self.driver.excute_scripts(js)
+    def run_steps(self, path, operation):
+        with open(path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        steps = data[operation]
+        for step in steps:
+            if step['action'] == "find_and_click":
+                self.find_and_click(step['locator'])
+
+            elif step['action'] == "send":
+                # print(step['locator'], step['key'])
+                self.send(step['locator'], step['key'])
+
+            elif step['action'] == "scroll_find_click":
+                self.scroll_find_click(step['locator'])
+
+            elif step['action'] == "find_and_get_text":
+                self.find_and_get_text(step['locator'])

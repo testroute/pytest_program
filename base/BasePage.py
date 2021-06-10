@@ -14,7 +14,7 @@ from common import MyLogger
 
 
 class BasePage():
-    def __init__(self,driver:webdriver=None):
+    def __init__(self, driver: webdriver = None):
         self.driver = driver
         self.log = MyLogger.logger
 
@@ -23,7 +23,6 @@ class BasePage():
 
     def find_and_click(self, locator):
         self.find(*locator).click()
-
 
     def find_and_get_text(self, locator):
         return self.find(locator).text

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0610">
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_setupclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BasePage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/conftest/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/conftest/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/testmytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/testmytest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,10 +142,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.test_setupclass" />
       <item itemvalue="Python tests.pytest for TestFile.test_func2" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
       <item itemvalue="Python tests.Unittests for BaseCase.basecase" />
-      <item itemvalue="Python.test_setupclass" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
     </list>
     <recent_temporary>
@@ -162,6 +158,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -201,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623237786354</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0610">
+      <created>1623312299099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623312299099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +225,8 @@
     <MESSAGE value="05 26" />
     <MESSAGE value="05 27" />
     <MESSAGE value="0609" />
-    <option name="LAST_COMMIT_MESSAGE" value="0609" />
+    <MESSAGE value="0610" />
+    <option name="LAST_COMMIT_MESSAGE" value="0610" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

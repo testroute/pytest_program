@@ -9,9 +9,10 @@
 @Desc   :   
 """
 import requests
+import yaml
 
 
-def _get_token():
+def _getToken():
     url = "http://stuq.ceshiren.com:8089/user/login"
     body = {
         "password": "123",
@@ -22,7 +23,7 @@ def _get_token():
         "Content-Type": "application/json",
         "token": "1"
     }
-    res = requests.post(url,json=body,headers = headers)
+    res = requests.post(url, json=body, headers=headers)
     _token = res.json()["data"]["token"]
     return _token
 
@@ -34,8 +35,18 @@ def _confirmLogin(token):
         "accept": "*/*",
         "token": token
     }
-    res = requests.get(url,headers = headers)
+    res = requests.get(url, headers=headers)
     if res.json()["message"] == "成功":
         return True
     else:
         return False
+def _updateToken():
+    with open("../datas/common_datas.yaml","w+") as f:
+        token = _getToken()
+        f.write(token)
+        f.close()
+def _readToken():
+    with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+        Token = data["token"]
+        f.close()
