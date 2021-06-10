@@ -13,7 +13,7 @@ from selenium import webdriver
 from common import MyLogger
 
 
-class BasePage:
+class BasePage():
     def __init__(self,driver:webdriver=None):
         self.driver = driver
         self.log = MyLogger.logger
