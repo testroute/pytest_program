@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0610">
-      <change afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BasePage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inherit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inherit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,28 @@
       <recent name="F:\pycharm\pytest_program" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for testmytest.MyTestClass">
+  <component name="RunManager" selected="Python.test_inherit">
+    <configuration name="test_inherit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_inherit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_setupclass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,36 +98,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for BaseCase.basecase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;BaseCase.basecase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for TestFile.test_func2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/conftest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestFile.test_func2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for testmytest.MyTestClass" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -141,20 +132,36 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_inherit.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_inherit.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.test_setupclass" />
-      <item itemvalue="Python tests.pytest for TestFile.test_func2" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
-      <item itemvalue="Python tests.Unittests for BaseCase.basecase" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
+      <item itemvalue="Python tests.pytest in test_inherit.py" />
+      <item itemvalue="Python.test_inherit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_inherit" />
+        <item itemvalue="Python tests.pytest in test_inherit.py" />
         <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
         <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
         <item itemvalue="Python.test_setupclass" />
-        <item itemvalue="Python tests.Unittests for BaseCase.basecase" />
-        <item itemvalue="Python tests.pytest for TestFile.test_func2" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623312299099</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0610">
+      <created>1623326480313</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623326480313</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +259,11 @@
           <url>file://$PROJECT_DIR$/testcases/testmytest.py</url>
           <line>16</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_inherit.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

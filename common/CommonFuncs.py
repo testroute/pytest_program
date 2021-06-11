@@ -12,7 +12,11 @@ import requests
 import yaml
 
 
-def _getToken():
+def __getToken():
+    """
+    获取网站token
+    :return:token字符串
+    """
     url = "http://stuq.ceshiren.com:8089/user/login"
     body = {
         "password": "123",
@@ -28,8 +32,14 @@ def _getToken():
     return _token
 
 
-# curl -X GET "http://stuq.ceshiren.com:8089/user/isLogin" -H  "accept: */*" -H  "token: 3e167c28e2f2b962bf6e9c80543470e6"
+# curl -X GET "http://stuq.ceshiren.com:8089/user/isLogin" -H  "accept: */*" -H  "token:
+# 3e167c28e2f2b962bf6e9c80543470e6"
 def _confirmLogin(token):
+    """
+    检查登录状态
+    :param token:登录token
+    :return: 布尔类型，是否登录
+    """
     url = "http://stuq.ceshiren.com:8089/user/login"
     headers = {
         "accept": "*/*",
@@ -40,11 +50,17 @@ def _confirmLogin(token):
         return True
     else:
         return False
+
+
 def _updateToken():
+
     with open("../datas/common_datas.yaml","w+") as f:
-        token = _getToken()
+        data = yaml.safe_load(f)
+        token = __getToken()
         f.write(token)
         f.close()
+
+
 def _readToken():
     with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
         data = yaml.safe_load(f)

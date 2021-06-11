@@ -42,6 +42,7 @@ class basecase(BaseCase):
     # 每个用例前都会执行
     # def setUp(self, *args):
     #     super(basecase, self).setUp(*args)
+
     # class前执行一次
     def setup_class(self, *args):
         if _confirmLogin(self.__token):
@@ -51,6 +52,7 @@ class basecase(BaseCase):
             __token = _getToken()
             js = 'window.localStorage.setItem("token",%s)' % self.__token
             self.driver.excute_scripts(js)
+
     def run_steps(self, path, operation):
         with open(path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
