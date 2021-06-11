@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0610">
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0611">
       <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inherit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inherit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623326480313</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0611">
+      <created>1623405246145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623405246145</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +243,8 @@
     <MESSAGE value="05 27" />
     <MESSAGE value="0609" />
     <MESSAGE value="0610" />
-    <option name="LAST_COMMIT_MESSAGE" value="0610" />
+    <MESSAGE value="0611" />
+    <option name="LAST_COMMIT_MESSAGE" value="0611" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

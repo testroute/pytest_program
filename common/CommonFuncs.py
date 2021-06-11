@@ -54,15 +54,23 @@ def _confirmLogin(token):
 
 def _updateToken():
 
-    with open("../datas/common_datas.yaml","w+") as f:
-        data = yaml.safe_load(f)
+    with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
+        datas = yaml.safe_load(f.read())
         token = __getToken()
-        f.write(token)
-        f.close()
+        try:
+            datas["Token"] = token
+            yaml.safe_dump(datas,f)
+            f.close()
+        except Exception as e:
+            f.close()
+            raise e.__traceback__
 
 
 def _readToken():
     with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-        Token = data["token"]
+        datas = yaml.safe_load(f.read())
         f.close()
+        try:
+            return datas["Token"]
+        except Exception as e:
+            _updateToken()
