@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0611">
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/basic_test_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/page_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ttt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/conftest/TestFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/conftest/TestFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/testmytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/testmytest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inherit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inherit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +68,8 @@
       <recent name="F:\pycharm\pytest_program" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_inherit">
-    <configuration name="test_inherit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for testmytest.MyTestClass.test_basics">
+    <configuration name="CommonFuncs" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,11 +77,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_inherit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/CommonFuncs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,25 +90,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_setupclass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for TestFile.Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/conftest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/test_setupclass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestFile.Tests&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_ttt.Test_wggg" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ttt.Test_wggg&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for testmytest.MyTestClass" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -128,36 +154,37 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_inherit.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for testmytest.MyTestClass.test_two" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_inherit.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;testmytest.MyTestClass.test_two&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_setupclass" />
-      <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
+      <item itemvalue="Python.CommonFuncs" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
-      <item itemvalue="Python tests.pytest in test_inherit.py" />
-      <item itemvalue="Python.test_inherit" />
+      <item itemvalue="Python tests.pytest for TestFile.Tests" />
+      <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_two" />
+      <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
+      <item itemvalue="Python tests.pytest for test_ttt.Test_wggg" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_inherit" />
-        <item itemvalue="Python tests.pytest in test_inherit.py" />
-        <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
         <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
-        <item itemvalue="Python.test_setupclass" />
+        <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
+        <item itemvalue="Python tests.pytest for test_ttt.Test_wggg" />
+        <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_two" />
+        <item itemvalue="Python tests.pytest for TestFile.Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623405246145</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="0611">
+      <created>1623405749320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623405749320</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,14 +294,14 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/testmytest.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_inherit.py</url>
           <line>28</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/testcases/testmytest.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

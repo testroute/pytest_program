@@ -58,8 +58,11 @@
 #         assert get_ping_response("192.168.1.1")[3] == 0
 #     else:
 #         raise Exception("failure")
+class Tests():
+    def test_func1(self):
+        print("===================test_func1==============")
+        assert True
 
-
-def test_func2():
-    print("===================test_func2==============")
-    assert True
+    def test_func2(self):
+        print("===================test_func2==============")
+        assert True

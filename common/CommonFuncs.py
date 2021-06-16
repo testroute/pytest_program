@@ -8,6 +8,9 @@
 @Version    :   v 0.1
 @Desc   :   
 """
+import sys
+import traceback
+
 import requests
 import yaml
 
@@ -40,37 +43,64 @@ def _confirmLogin(token):
     :param token:登录token
     :return: 布尔类型，是否登录
     """
-    url = "http://stuq.ceshiren.com:8089/user/login"
+    url = "http://stuq.ceshiren.com:8089/user/isLogin"
     headers = {
         "accept": "*/*",
         "token": token
     }
     res = requests.get(url, headers=headers)
+    print(res.json())
     if res.json()["message"] == "成功":
         return True
     else:
         return False
 
 
-def _updateToken():
-
-    with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
-        datas = yaml.safe_load(f.read())
-        token = __getToken()
-        try:
-            datas["Token"] = token
-            yaml.safe_dump(datas,f)
-            f.close()
-        except Exception as e:
-            f.close()
-            raise e.__traceback__
-
-
-def _readToken():
-    with open("../datas/common_datas.yaml","r+",encoding="utf-8") as f:
+def read_yaml(file):
+    """
+    读取文件，返回字典型内容
+    :param file: 字符串，文件路径
+    :return: 字典型文件内容
+    """
+    with open(file, "r+", encoding="utf-8") as f:
         datas = yaml.safe_load(f.read())
         f.close()
+    # print(datas)
+    return datas
+
+
+def _update_token_and_return():
+    """
+    获取新token写入文件并返回
+    :return:更新后的token串
+    """
+    datas = read_yaml("../datas/common_datas.yaml")
+    with open("../datas/common_datas.yaml", "w+", encoding="utf-8") as f:
+        token = __getToken()
         try:
-            return datas["Token"]
+            datas["token"] = token
+            yaml.safe_dump(datas, f)
+            f.close()
+            return datas["token"]
         except Exception as e:
-            _updateToken()
+            f.close()
+            raise e
+
+
+def _read_param(attr):
+    """
+    读取token
+    :param attr 读取内容的关键字
+    :return: 对应内容
+    """
+    datas = read_yaml("../datas/common_datas.yaml")
+    try:
+        return datas[attr]
+    except Exception as e:
+        # traceback.print_exc()
+        raise e
+
+
+if __name__ == '__main__':
+    print(_read_param("token"))
+    print(_update_token_and_return())

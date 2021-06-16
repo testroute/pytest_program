@@ -38,14 +38,14 @@ class A(object):
     _param1 = 1
     __param2 = 2
 
-    def __method(self):
+    def __method(self,param):
         print("I'm a method in class A")
         print()
     def method_x(self):
         print("I'm another method in class A\n")
 
-    def method(self):
-        self.__method()
+    def _method(self,param):
+        self.__method(param)
         self.method_x()
         print(self._param1,self.__param2)
 
@@ -54,21 +54,27 @@ class B(A):
     _param1 = 3
     __param2 = 4
 
-    def __method(self):
-        print("I'm a method in class B")
+    # def __method(self):
+    #     print("I'm a method in class B")
 
     def method_x(self):
         print("I'm another method in class B\n")
 
+class C(B):
+    def method(self):
+        self.param = '1234'
+        self._method(self.param)
 
 if __name__ == '__main__':
-    print("situation 1:")
-    a = A()
-    a.method()
-
-    b = B()
-    b.method()
-
-    print("situation 2:")
-    # a.__method()
-    a._A__method()
+    # print("situation 1:")
+    # a = A()
+    # a.method()
+    #
+    # b = B()
+    # b.method()
+    #
+    # print("situation 2:")
+    # # a.__method()
+    # a._A__method()
+    C = C()
+    C.method()

@@ -8,15 +8,17 @@
 @Version    :   v 0.1
 @Desc  :
 """
+import time
 
 from seleniumbase import BaseCase
 
 from base.BaseCase import basecase
 
 
-class MyTestClass(basecase):
+class MyTestClass(BaseCase):
 
     def test_basics(self):
+        self.browser
         # url = "https://store.xkcd.com/collections/posters"
         # self.open(url)
         # self.type('input[name="q"]', "xkcd book")
@@ -32,7 +34,17 @@ class MyTestClass(basecase):
         # self.assert_exact_text("xkcd.com", "h2")
         url = "http://47.110.37.80:8088/#/home/jenkins"
         self.open(url)
-    def test_two(self):
-        print("testtwo")
-        url = "http://47.110.37.80:8088/#/home/jenkins"
-        self.open(url)
+        #任务管理
+        self.click('div[text="任务管理"]')
+        js = 'window.localStorage.getItem("token"])'
+        print(self.excute_script(script=js))
+        time.sleep(10)
+
+
+    # def test_two(self):
+    #     print("testtwo")
+    #     url = "http://47.110.37.80:8088/#/home/jenkins"
+    #     self.open(url)
+if __name__ == '__main__':
+    C = MyTestClass()
+    C.test_basics()

@@ -1,0 +1,22 @@
+testmytest.py::MyTestClass::test_basics
+--------------------------------------------------------------------
+Last Page: http://47.110.37.80:8088/#/?redirect=%2F%3Fredirect%3D%252Fhome%252Fjenkins
+  Browser: chrome
+Timestamp: 1623836485  (Unix Timestamp)
+     Date: Wednesday, 16 June 2021
+     Time: 5:41:25 PM  (中国标准时间, UTC+08:00)
+--------------------------------------------------------------------
+Traceback: File "C:\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases\testmytest.py", line 38, in test_basics
+    self.click('div[text="任务管理"]')
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\SeleniumBase\venv\lib\site-packages\seleniumbase-1.63.9-py3.8.egg\seleniumbase\fixtures\base_case.py", line 176, in click
+    element = page_actions.wait_for_element_visible(
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\SeleniumBase\venv\lib\site-packages\seleniumbase-1.63.9-py3.8.egg\seleniumbase\fixtures\page_actions.py", line 339, in wait_for_element_visible
+    timeout_exception(NoSuchElementException, message)
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\SeleniumBase\venv\lib\site-packages\seleniumbase-1.63.9-py3.8.egg\seleniumbase\fixtures\page_actions.py", line 132, in timeout_exception
+    raise exception(message)
+Exception: Message: 
+ Element {div[text="任务管理"]} was not present after 6 seconds!

@@ -1,7 +1,11 @@
 common:
-  - action: find_and_click
-    locator: [xpath, "//*[@text='行情']"]
-
+- action: find_and_click
+  locator:
+  - xpath
+  - "//*[@text='\u884C\u60C5']"
 goto_mine:
-  - action: find_and_click
-    locator: [xpath, "//*[@text='我的']"]
+- action: find_and_click
+  locator:
+  - xpath
+  - "//*[@text='\u6211\u7684']"
+token: a343aa1d900416d2c87731ece1db3843
