@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0611">
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/basic_test_info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/page_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ttt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0616">
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-06-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-06-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_not_use_base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/conftest/TestFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/conftest/TestFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/basic_test_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/basic_test_info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/page_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/latest_logs/testcases.testmytest.MyTestClass.test_basics/page_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/testmytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/testmytest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inherit.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inherit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ttt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ttt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests_wg.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests_wg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <recent name="F:\pycharm\pytest_program" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for testmytest.MyTestClass.test_basics">
+  <component name="RunManager" selected="Python tests.pytest for testmytest.MyTestClass">
     <configuration name="CommonFuncs" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,35 +88,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for TestFile.Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_not_use_base.test_func1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/conftest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestFile.Tests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_ttt.Test_wggg" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ttt.Test_wggg&quot;" />
+      <option name="_new_target" value="&quot;test_not_use_base.test_func1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -170,21 +152,37 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in testmytest.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/testmytest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.CommonFuncs" />
-      <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
-      <item itemvalue="Python tests.pytest for TestFile.Tests" />
-      <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_two" />
       <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
-      <item itemvalue="Python tests.pytest for test_ttt.Test_wggg" />
+      <item itemvalue="Python tests.pytest in testmytest.py" />
+      <item itemvalue="Python tests.pytest for test_not_use_base.test_func1" />
+      <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_two" />
+      <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
         <item itemvalue="Python tests.pytest for testmytest.MyTestClass" />
-        <item itemvalue="Python tests.pytest for test_ttt.Test_wggg" />
         <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_two" />
-        <item itemvalue="Python tests.pytest for TestFile.Tests" />
+        <item itemvalue="Python tests.pytest for testmytest.MyTestClass.test_basics" />
+        <item itemvalue="Python tests.pytest for test_not_use_base.test_func1" />
+        <item itemvalue="Python tests.pytest in testmytest.py" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623405749320</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0616">
+      <created>1623843858654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623843858654</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,7 +283,8 @@
     <MESSAGE value="0609" />
     <MESSAGE value="0610" />
     <MESSAGE value="0611" />
-    <option name="LAST_COMMIT_MESSAGE" value="0611" />
+    <MESSAGE value="0616" />
+    <option name="LAST_COMMIT_MESSAGE" value="0616" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,19 +295,19 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/common/MyLogger.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_inherit.py</url>
           <line>28</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/testmytest.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/../SeleniumBase/venv/Lib/site-packages/seleniumbase-1.63.9-py3.8.egg/seleniumbase/fixtures/js_utils.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../SeleniumBase/venv/Lib/site-packages/seleniumbase-1.63.9-py3.8.egg/seleniumbase/fixtures/base_case.py</url>
+          <line>8352</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

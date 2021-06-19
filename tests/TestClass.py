@@ -25,5 +25,5 @@ class TestClass(BaseCase):
         self.assert_text("free to copy and reuse")
         self.go_back()
         self.click_link("About")
-        log.info("wg+++++")
+        # log.info("wg+++++")
         self.assert_exact_text("xkcd.com", "h2")

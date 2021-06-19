@@ -8,5 +8,11 @@
 @Version    :   v 0.1
 @Desc  :
 """
-from  common.MyLogger import logger as log
-log.info("wg")
+class Testwg():
+    # def __init__(self):
+    #     print("init")
+    # @classmethod
+    # def setup_class(cls):
+    #     pass
+    def _func1(self):
+        print("test_wg")

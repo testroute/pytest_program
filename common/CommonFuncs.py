@@ -49,7 +49,7 @@ def _confirmLogin(token):
         "token": token
     }
     res = requests.get(url, headers=headers)
-    print(res.json())
+    # print(res.json())
     if res.json()["message"] == "成功":
         return True
     else:

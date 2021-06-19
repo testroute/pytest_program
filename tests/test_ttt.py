@@ -10,39 +10,34 @@
 """
 import pytest
 
-
-class Testwg():
-    # def __init__(self):
-    #     pass
-    @classmethod
-    def setup_class(cls):
-        pass
-    @classmethod
-    def _func1(self):
-        print("test_wg")
+from tests.tests_wg import Testwg
 
 
 class Testwgg(Testwg):
     # def __init__(self):
-    #     super().__init__()
     #     print("init")
+
     @pytest.fixture(scope='class',autouse=True)
     def fixture_first(self):
+        self._func1()
         print("fixture1")
-
-    @classmethod
-    def setup_class(cls):
-        super().setup_class()
-        print("setup_class", cls.__class__)
-        cls._func1()
+    #
+    def setup(self):
+        print("here setup used")
+    # @classmethod
+    # def setup_class(cls):
+    #     super().setup_class()
+    #     print("setup_class", cls.__class__)
+    #     cls._func1()
 
     def _func2(self):
-        print(self.__class__)
+        # print(self.__class__)
         self._func1()
         print("testwgg")
 
 
 class Test_wggg(Testwgg):
+
     def test_func3(self):
         self._func2()
 

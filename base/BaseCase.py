@@ -19,43 +19,35 @@ from seleniumbase.fixtures.base_case import BaseCase
 from common.CommonFuncs import _confirmLogin, _read_param, _update_token_and_return
 
 
-class basecase(BaseCase,):
+class basecase(BaseCase):
     log = MyLogger.logger
     __token = _read_param('token')
 
-    # 每个用例前都会执行
-    # def __init__(self, *args, **kwargs):
-    #     print("init",time.time())
-    #     self.driver = None
-    #     # self.browser = 'Edge'
-    #     # self.settings_file = None
-    #     # self.device_metrics = None
-    #     # self.mobile_emulator = None
-    #     # self.dashboard = None
-    #     # self._reuse_session = None
-    #     # self.headless = None
-    #     # self.locale_code = None
-    #     # self.protocol = None
-    #     # self.servername = None
-    #     # self.port = None
-    #     # self.proxy_string = None
-    #     # self.user_agent = None
-    #     # self.cap_file = None
-    #     # self.cap_string = None
-    #     super(basecase, self).__init__(*args, **kwargs)
+    def setUp(self):
+        super(basecase, self).setUp()
+        # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
 
-    # 每个用例前都会执行
+    def tearDown(self):
+        self.save_teardown_screenshot()
+        if self.has_exception():
+            # <<< Run custom code if the test failed. >>>
+            pass
+        else:
+            # <<< Run custom code if the test passed. >>>
+            pass
+        # (Wrap unreliable tearDown() code in a try/except block.)
+        # <<< Run custom tearDown() code BEFORE the super().tearDown() >>>
+        super(basecase, self).tearDown()
 
     # class前执行一次
-    @pytest.fixture(scope='class',autouse=True)
     def set_driver(self):
         if _confirmLogin(self.__token):
-            js = 'window.localStorage.setItem("token",%s)' % self.__token
+            js = 'window.localStorage.setItem("token","%s")' % self.__token
             self.execute_script(script=js)
         else:
             __token = _update_token_and_return()
-            js = 'window.localStorage.setItem("token",%s)' % self.__token
-            self.execute_script(self,script=js)
+            js = 'window.localStorage.setItem("token","%s")' % self.__token
+            self.execute_script(script=js)
 
     def run_steps(self, path, operation):
         with open(path, "r", encoding="utf-8") as f:
@@ -74,4 +66,3 @@ class basecase(BaseCase,):
 
             elif step['action'] == "find_and_get_text":
                 self.find_and_get_text(step['locator'])
-

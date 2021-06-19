@@ -10,15 +10,16 @@
 """
 import time
 
+import pytest
 from seleniumbase import BaseCase
 
 from base.BaseCase import basecase
 
 
-class MyTestClass(BaseCase):
+class MyTestClass(basecase):
 
     def test_basics(self):
-        self.browser
+        # self.browser
         # url = "https://store.xkcd.com/collections/posters"
         # self.open(url)
         # self.type('input[name="q"]', "xkcd book")
@@ -32,19 +33,22 @@ class MyTestClass(BaseCase):
         # self.go_back()
         # self.click_link("About")
         # self.assert_exact_text("xkcd.com", "h2")
-        url = "http://47.110.37.80:8088/#/home/jenkins"
+        url = "http://47.110.37.80:8088/#/"
         self.open(url)
+        self.set_driver()
+
         #任务管理
         self.click('div[text="任务管理"]')
-        js = 'window.localStorage.getItem("token"])'
-        print(self.excute_script(script=js))
+        time.sleep(3)
+        url = "http://47.110.37.80:8088/#/home/jenkins"
+        self.open(url)
         time.sleep(10)
 
+    def test_two(self):
+        print("testtwo")
+        url = "http://47.110.37.80:8088/#/home/jenkins"
+        self.open(url)
 
-    # def test_two(self):
-    #     print("testtwo")
-    #     url = "http://47.110.37.80:8088/#/home/jenkins"
-    #     self.open(url)
+
 if __name__ == '__main__':
-    C = MyTestClass()
-    C.test_basics()
+    pytest.main()
