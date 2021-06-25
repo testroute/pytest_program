@@ -58,8 +58,16 @@
 #         assert get_ping_response("192.168.1.1")[3] == 0
 #     else:
 #         raise Exception("failure")
-class Tests():
+import unittest
+
+import pytest
+
+
+@pytest.mark.usefixtures("set_driver")
+class Tests:
     def test_func1(self):
+        sd = self.login_class
+        sd.login_by_token()
         print("===================test_func1==============")
         assert True
 

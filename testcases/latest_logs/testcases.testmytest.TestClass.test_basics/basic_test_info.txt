@@ -1,0 +1,17 @@
+testmytest.py::TestClass::test_basics
+--------------------------------------------------------------------
+Last Page: http://47.110.37.80:8088/#/
+  Browser: chrome
+Timestamp: 1624616405  (Unix Timestamp)
+     Date: Friday, 25 June 2021
+     Time: 6:20:05 PM  (中国标准时间, UTC+08:00)
+--------------------------------------------------------------------
+Traceback: File "C:\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases\testmytest.py", line 26, in test_basics
+    self.login_class.login_by_token()
+  File "C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases\conftest.py", line 55, in login_by_token
+    self.execute_script(script=js)
+Exception: 'login_class' object has no attribute 'execute_script'

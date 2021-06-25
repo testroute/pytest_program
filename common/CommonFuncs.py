@@ -8,6 +8,7 @@
 @Version    :   v 0.1
 @Desc   :   
 """
+import os
 import sys
 import traceback
 
@@ -74,8 +75,9 @@ def _update_token_and_return():
     获取新token写入文件并返回
     :return:更新后的token串
     """
-    datas = read_yaml("../datas/common_datas.yaml")
-    with open("../datas/common_datas.yaml", "w+", encoding="utf-8") as f:
+    file_path = os.path.dirname(__file__).strip("common").__add__("datas\\common_datas.yaml")
+    datas = read_yaml(file_path)
+    with open(file_path, "w+", encoding="utf-8") as f:
         token = __getToken()
         try:
             datas["token"] = token
@@ -93,7 +95,9 @@ def _read_param(attr):
     :param attr 读取内容的关键字
     :return: 对应内容
     """
-    datas = read_yaml("../datas/common_datas.yaml")
+
+    file_path = os.path.dirname(__file__).strip("common").__add__("datas\\common_datas.yaml")
+    datas = read_yaml(file_path)
     try:
         return datas[attr]
     except Exception as e:
