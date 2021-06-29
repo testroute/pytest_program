@@ -23,31 +23,23 @@ class basecase(BaseCase):
     log = MyLogger.logger
     __token = _read_param('token')
 
-    def setUp(self):
-        super(basecase, self).setUp()
-        # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
-
-    def tearDown(self):
-        self.save_teardown_screenshot()
-        if self.has_exception():
-            # <<< Run custom code if the test failed. >>>
-            pass
-        else:
-            # <<< Run custom code if the test passed. >>>
-            pass
-        # (Wrap unreliable tearDown() code in a try/except block.)
-        # <<< Run custom tearDown() code BEFORE the super().tearDown() >>>
-        super(basecase, self).tearDown()
+    # def setUp(self):
+    #     super(basecase, self).setUp()
+    #     # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
+    #
+    # def tearDown(self):
+    #     self.save_teardown_screenshot()
+    #     if self.has_exception():
+    #         # <<< Run custom code if the test failed. >>>
+    #         pass
+    #     else:
+    #         # <<< Run custom code if the test passed. >>>
+    #         pass
+    #     # (Wrap unreliable tearDown() code in a try/except block.)
+    #     # <<< Run custom tearDown() code BEFORE the super().tearDown() >>>
+    #     super(basecase, self).tearDown()
 
     # class前执行一次
-    def set_driver(self):
-        if _confirmLogin(self.__token):
-            js = 'window.localStorage.setItem("token","%s")' % self.__token
-            self.execute_script(script=js)
-        else:
-            __token = _update_token_and_return()
-            js = 'window.localStorage.setItem("token","%s")' % self.__token
-            self.execute_script(script=js)
 
     def run_steps(self, path, operation):
         with open(path, "r", encoding="utf-8") as f:

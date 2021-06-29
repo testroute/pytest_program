@@ -11,10 +11,8 @@
 import time
 
 import pytest
-from seleniumbase import BaseCase
 
 from base.BaseCase import basecase
-from common.conftest import conftest
 
 
 @pytest.mark.usefixtures("set_driver")
@@ -23,7 +21,7 @@ class TestClass(basecase):
     def test_basics(self):
         url = "http://47.110.37.80:8088/#/"
         self.open(url)
-        self.login_class.login_by_token()
+        self.login_class().login_by_token(self)
         #任务管理
         # self.click('div[text="任务管理"]')
         time.sleep(3)

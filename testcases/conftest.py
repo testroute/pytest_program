@@ -48,21 +48,20 @@ def set_driver(request):
         __token = _read_param('token')
 
         # class前执行一次
-        def login_by_token(self):
+        def login_by_token(self,cls):
             print("login by token")
             if _confirmLogin(self.__token):
                 js = 'window.localStorage.setItem("token","%s")' % self.__token
-                self.execute_script(script=js)
+                cls.execute_script(script=js)
             else:
                 __token = _update_token_and_return()
                 js = 'window.localStorage.setItem("token","%s")' % self.__token
-                self.execute_script(script=js)
+                cls.execute_script(script=js)
 
         def login_by_cookie(self):
             print("login by cookie")
     if request.cls:
-        request.cls.login_class = login_class()
+        request.cls.login_class = login_class
         yield request.cls.login_class
     else:
-        login_class = login_class()
         yield login_class
