@@ -17,16 +17,17 @@ from base.BaseCase import basecase
 
 @pytest.mark.usefixtures("set_driver")
 class TestClass(basecase):
-
     def test_basics(self):
         url = "http://47.110.37.80:8088/#/"
         self.open(url)
         self.login_class().login_by_token(self)
         #任务管理
-        # self.click('div[text="任务管理"]')
         time.sleep(3)
         url = "http://47.110.37.80:8088/#/home/jenkins"
         self.open(url)
+        #        self.driver.find_element_by_xpath("//div[contains(text(),'任务管理')]").click()
+
+        self.click(selector='//div[contains(text(),"任务管理")]')
         time.sleep(10)
 
     def test_two(self):
