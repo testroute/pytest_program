@@ -8,8 +8,11 @@
 # @Version    :   v 0.1
 # @Desc  :
 # """
-import pytest
+import pytest, time
 
+from common import MyLogger
+
+log = MyLogger.logger
 # 非特殊hook类fixture需要测试用例testcase（_test_two）形式调用fixture
 # @pytest.fixture()
 # def _test_two():
@@ -25,11 +28,11 @@ import pytest
 
 # 特殊hook类fixture不需要在测试用例处调用，系统会自动识别并调用
 # 所有函数前调用
-from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param
+from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param,_confirm_scope
 
 
 def pytest_runtest_setup():
-    print("===================setup==============")
+    print("conftest.pytest_runtest_setup")
     # token = _get_token()
 
 
@@ -42,26 +45,39 @@ def pytest_runtest_setup():
 # def pytest_collection_modifyitems():
 #     print("===================pytest_collection_modifyitems==============")
 
-@pytest.fixture()
+@pytest.fixture(scope="class", autouse=True)
 def set_driver(request):
-    class login_class():
-        __token = _read_param('token')
+    __is_class_request = False
+
+    class login_class:
 
         # class前执行一次
-        def login_by_token(self,cls):
-            print("login by token")
-            if _confirmLogin(self.__token):
-                js = 'window.localStorage.setItem("token","%s")' % self.__token
+        def login_by_token(self, cls):
+            # print("login by token")
+            __token = _read_param('token')
+
+            if _confirmLogin(__token):
+                js = 'window.localStorage.setItem("token","%s")' % __token
                 cls.execute_script(script=js)
             else:
                 __token = _update_token_and_return()
-                js = 'window.localStorage.setItem("token","%s")' % self.__token
+                js = 'window.localStorage.setItem("token","%s")' % __token
                 cls.execute_script(script=js)
 
         def login_by_cookie(self):
             print("login by cookie")
-    if request.cls:
-        request.cls.login_class = login_class
-        yield request.cls.login_class
-    else:
-        yield login_class
+    scope = _confirm_scope(request)
+    # if request.session:
+    #     __is_class_request = True
+    #
+    # if __is_class_request:
+    #     request.session.login_class = login_class
+    #     yield request.session.login_class
+    # else:
+    login_class = login_class
+    yield login_class
+
+
+@pytest.fixture(scope="session", autouse=True)
+def print_time():
+    print("test begins at:", time.time())

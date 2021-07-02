@@ -29,7 +29,7 @@ from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_pa
 
 
 def pytest_runtest_setup():
-    print("===================setup==============")
+    print("pytest_runtest_setup")
     # token = _get_token()
 
 

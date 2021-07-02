@@ -105,6 +105,26 @@ def _read_param(attr):
         raise e
 
 
+def _confirm_scope(request):
+    scope = None
+    try:
+        if request.function:
+            scope = request.function
+        if request.property:
+            scope = request.property
+        if request.module:
+            scope = request.module
+        if request.path:
+            scope = request.path
+        if request.session:
+            scope = request.session
+    except Exception as e:
+        print("请确认fixture的作用范围")
+        raise e
+
+    return scope
+
+
 if __name__ == '__main__':
     print(_read_param("token"))
     print(_update_token_and_return())
