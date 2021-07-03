@@ -15,7 +15,7 @@ import pytest
 from base.BaseCase import basecase
 
 
-@pytest.mark.usefixtures("set_driver")
+# @pytest.mark.usefixtures("set_driver")
 class TestClass(basecase):
     def test_basics(self):
         url = "http://47.110.37.80:8088/#/"
@@ -30,11 +30,16 @@ class TestClass(basecase):
         self.click(selector='//div[contains(text(),"任务管理")]')
         time.sleep(10)
 
-    def test_two(self):
-        print("testtwo")
-        url = "http://47.110.37.80:8088/#/home/jenkins"
-        self.open(url)
 
+
+def test_request_sb_fixture(request):
+    sb = request.getfixturevalue("sb")
+    lc = request.getfixturevalue("set_driver")
+    url = "http://47.110.37.80:8088/#/home/jenkins"
+    sb.open(url)
+    lc.login_by_token(lc, sb)
+    sb.open(url)
+    time.sleep(5)
 
 if __name__ == '__main__':
     pytest.main()
