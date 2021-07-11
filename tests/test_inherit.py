@@ -49,6 +49,9 @@ class A(object):
         self.method_x()
         print(self._param1,self.__param2)
 
+    @classmethod
+    def method_static(cls):
+        print("I'm another method in class A\n")
 
 class B(A):
     _param1 = 3
@@ -77,4 +80,6 @@ if __name__ == '__main__':
     # # a.__method()
     # a._A__method()
     C = C()
-    C.method()
+    C.method_static()
+    print(hasattr(C, "method_static"))
+    print(hasattr(A, "method_static"))

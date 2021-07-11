@@ -45,9 +45,9 @@ def pytest_runtest_setup():
 # def pytest_collection_modifyitems():
 #     print("===================pytest_collection_modifyitems==============")
 
-@pytest.fixture(scope="class", autouse=True)
+@pytest.fixture(scope="session")
 def set_driver(request):
-    __is_class_request = False
+    # __is_cls_request=__is_session_request = False
 
     class login_class:
 
@@ -66,16 +66,16 @@ def set_driver(request):
 
         def login_by_cookie(self):
             print("login by cookie")
-    scope = _confirm_scope(request)
-    # if request.session:
-    #     __is_class_request = True
-    #
-    # if __is_class_request:
-    #     request.session.login_class = login_class
-    #     yield request.session.login_class
-    # else:
-    login_class = login_class
-    yield login_class
+    # print("request.node:",request.node)
+    # print( request.node.items[0].getparent(pytest.Class))
+    # print( request.node.items[0].getparent(pytest.Class).obj)
+    try: #测试类中返回
+        request.node.items[0].getparent(pytest.Class).obj.login_class = login_class()
+        # request.cls.login_class = login_class
+        yield request.node.items[0].getparent(pytest.Class).obj.login_class
+    except: #测试方法中返回
+        login_class = login_class()
+        yield login_class
 
 
 @pytest.fixture(scope="session", autouse=True)

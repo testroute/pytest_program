@@ -25,7 +25,10 @@ class basecase(BaseCase):
 
     # def setUp(self):
     #     super(basecase, self).setUp()
-    #     # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
+    #     # <<< 如果只验证 以下页面可以直接setup中登陆>>>
+    #     self.open("http://47.110.37.80:8088/#/")
+    #     js = 'window.localStorage.setItem("token","a343aa1d900416d2c87731ece1db3843")'
+    #     self.execute_script(script=js)
     #
     # def tearDown(self):
     #     self.save_teardown_screenshot()

@@ -110,14 +110,7 @@ def _confirm_scope(request):
     try:
         if request.function:
             scope = request.function
-        if request.property:
-            scope = request.property
-        if request.module:
-            scope = request.module
-        if request.path:
-            scope = request.path
-        if request.session:
-            scope = request.session
+
     except Exception as e:
         print("请确认fixture的作用范围")
         raise e

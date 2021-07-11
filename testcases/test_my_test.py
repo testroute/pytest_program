@@ -14,21 +14,19 @@ import pytest
 
 from base.BaseCase import basecase
 
-
-# @pytest.mark.usefixtures("set_driver")
+#在setup里open，然后reuse
+@pytest.mark.usefixtures("set_driver")
 class TestClass(basecase):
     def test_basics(self):
         url = "http://47.110.37.80:8088/#/"
         self.open(url)
-        self.login_class().login_by_token(self)
+        self.login_class.login_by_token(self)
         #任务管理
         time.sleep(3)
         url = "http://47.110.37.80:8088/#/home/jenkins"
         self.open(url)
-        #        self.driver.find_element_by_xpath("//div[contains(text(),'任务管理')]").click()
-
         self.click(selector='//div[contains(text(),"任务管理")]')
-        time.sleep(10)
+        time.sleep(3)
 
 
 
@@ -37,7 +35,7 @@ def test_request_sb_fixture(request):
     lc = request.getfixturevalue("set_driver")
     url = "http://47.110.37.80:8088/#/home/jenkins"
     sb.open(url)
-    lc.login_by_token(lc, sb)
+    lc.login_by_token(sb)
     sb.open(url)
     time.sleep(5)
 
