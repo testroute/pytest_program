@@ -23,12 +23,12 @@ class basecase(BaseCase):
     log = MyLogger.logger
     __token = _read_param('token')
 
-    # def setUp(self):
-    #     super(basecase, self).setUp()
-    #     # <<< 如果只验证 以下页面可以直接setup中登陆>>>
-    #     self.open("http://47.110.37.80:8088/#/")
-    #     js = 'window.localStorage.setItem("token","a343aa1d900416d2c87731ece1db3843")'
-    #     self.execute_script(script=js)
+    def setUp(self):
+        super(basecase, self).setUp()
+        # <<< 如果只验证 以下页面可以直接setup中登陆>>>
+        self.open("http://47.110.37.80:8088/#/")
+        js = 'window.localStorage.setItem("token","a343aa1d900416d2c87731ece1db3843")'
+        self.execute_script(script=js)
     #
     # def tearDown(self):
     #     self.save_teardown_screenshot()
@@ -42,22 +42,5 @@ class basecase(BaseCase):
     #     # <<< Run custom tearDown() code BEFORE the super().tearDown() >>>
     #     super(basecase, self).tearDown()
 
-    # class前执行一次
 
-    def run_steps(self, path, operation):
-        with open(path, "r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-        steps = data[operation]
-        for step in steps:
-            if step['action'] == "find_and_click":
-                self.find_and_click(step['locator'])
 
-            elif step['action'] == "send":
-                # print(step['locator'], step['key'])
-                self.send(step['locator'], step['key'])
-
-            elif step['action'] == "scroll_find_click":
-                self.scroll_find_click(step['locator'])
-
-            elif step['action'] == "find_and_get_text":
-                self.find_and_get_text(step['locator'])
