@@ -8,6 +8,7 @@
 @Version    :   v 0.1
 @Desc   :   
 """
+import configparser
 import os
 import sys
 import traceback
@@ -100,6 +101,22 @@ def _read_param(attr):
     datas = read_yaml(file_path)
     try:
         return datas[attr]
+    except Exception as e:
+        # traceback.print_exc()
+        raise e
+
+def _read_url(attr):
+    """
+    读取token
+    :param attr 读取内容的关键字
+    :return: 对应内容
+    """
+
+    file_path = os.path.dirname(__file__).strip("common").__add__("config\\config.ini")
+    config = configparser.ConfigParser()
+    config.read(file_path)
+    try:
+        return config.get(attr,"base_url")
     except Exception as e:
         # traceback.print_exc()
         raise e

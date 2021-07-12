@@ -19,30 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-07-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-07-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/handler_2021-07-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-07-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-07-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/result_2021-07-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/setup_use_fixture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_pytest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_pytest/test_param.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_pytest/test_raise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0619">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/BaseCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jenkins_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_my_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_my_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_setupclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_setupclass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_ttt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_setup_and_fixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/CommonFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/CommonFuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625969385114</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0619">
+      <created>1626085237060</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626085237060</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

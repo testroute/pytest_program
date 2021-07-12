@@ -17,25 +17,33 @@ import yaml
 from common import MyLogger
 from seleniumbase.fixtures.base_case import BaseCase
 
-from common.CommonFuncs import _confirmLogin, _read_param, _update_token_and_return
+from common.CommonFuncs import _confirmLogin, _read_param, _update_token_and_return, _read_url
 
 
 class basecase(BaseCase):
     log = MyLogger.logger
-    __token = _read_param('token')
+    _env = None
+    __token = None
+    _url = None
 
     # 针对测试类的每个用例前都会执行，不使用与方法
     def setUp(self, *args):
         super(basecase, self).setUp(*args)
-        THIS_URL = os.getenv('TEMP_URL', 'http://47.110.37.80:8088/#/')
-        self.open(THIS_URL)
-        __token = _read_param('token')
-        if _confirmLogin(__token):
-            js = 'window.localStorage.setItem("token","%s")' % __token
+        if self._env:
+            pass
+        else:
+            self._env = 'test'
+        self._url = _read_url(self._env)
+        self.open(self._url)
+        js = 'window.localStorage.getItem("token")'
+        self.__token = self.execute_script(script=js)
+
+        if _confirmLogin(self.__token):
+            js = 'window.localStorage.setItem("token","%s")' % self.__token
             self.execute_script(script=js)
         else:
             __token = _update_token_and_return()
-            js = 'window.localStorage.setItem("token","%s")' % __token
+            js = 'window.localStorage.setItem("token","%s")' % self.__token
             self.execute_script(script=js)
         # print("setup++++++++++:",time.time())
 
