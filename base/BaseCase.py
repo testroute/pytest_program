@@ -42,7 +42,7 @@ class basecase(BaseCase):
             js = 'window.localStorage.setItem("token","%s")' % self.__token
             self.execute_script(script=js)
         else:
-            __token = _update_token_and_return()
+            self.__token = _update_token_and_return()
             js = 'window.localStorage.setItem("token","%s")' % self.__token
             self.execute_script(script=js)
         # print("setup++++++++++:",time.time())

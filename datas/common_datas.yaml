@@ -9,8 +9,6 @@ goto_mine:
   - xpath
   - "//*[@text='\u6211\u7684']"
 test:
-  - url: http://47.110.37.80:8088/#/
-  - token: a343aa1d900416d2c87731ece1db3843
-
-token: a343aa1d900416d2c87731ece1db3843
-
+- url: http://47.110.37.80:8088/#/
+- token: a343aa1d900416d2c87731ece1db3843
+token: 91132179124b7bf39f600e87b7962fb0
