@@ -9,7 +9,17 @@
 @Desc   :   
 """
 import pytest
+"""
+模块级别：setup_module、teardown_module   —   每个.py文件前后执行一次
 
+函数级别：setup_function、teardown_function   —   每个不在类中的函数前后执行一次
+
+类级别：setup_class、teardown_class   —   每个class前后执行一次
+
+类方法级别：setup_method、teardown_method   —   每个class中的方法setup之前和teardown之后执行一次
+
+类方法细化级别：setup、teardown    —   每个class中的方法前后执行
+"""
 
 # 模块中的方法
 def setup_module():

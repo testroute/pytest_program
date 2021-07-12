@@ -48,7 +48,7 @@ def set_driver(request):
         __token = _read_param('token')
 
         # class前执行一次
-        def login_by_token(self):
+        def login_by_token_test(self):
             print("login by token")
             # if _confirmLogin(self.__token):
             #     js = 'window.localStorage.setItem("token","%s")' % self.__token

@@ -32,8 +32,13 @@ from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_pa
 
 
 def pytest_runtest_setup():
+    #所有pytest收集来的测试用例前执行
+
     print("conftest.pytest_runtest_setup")
     # token = _get_token()
+
+def pytest_fixture_setup():
+    print("conftest.pytest_fixture_setup:",time.time())
 
 
 # 扩展命令行参数
@@ -53,7 +58,7 @@ def set_driver(request):
 
         # class前执行一次
         def login_by_token(self, cls):
-            # print("login by token")
+            print("login by token")
             __token = _read_param('token')
 
             if _confirmLogin(__token):
@@ -70,6 +75,7 @@ def set_driver(request):
     # print( request.node.items[0].getparent(pytest.Class))
     # print( request.node.items[0].getparent(pytest.Class).obj)
     try: #测试类中返回
+        #需要for循环
         request.node.items[0].getparent(pytest.Class).obj.login_class = login_class()
         # request.cls.login_class = login_class
         yield request.node.items[0].getparent(pytest.Class).obj.login_class
@@ -78,6 +84,6 @@ def set_driver(request):
         yield login_class
 
 
-@pytest.fixture(scope="session", autouse=True)
-def print_time():
-    print("test begins at:", time.time())
+# @pytest.fixture(scope="session", autouse=True)
+# def print_time():
+#     print("test begins at:", time.time())

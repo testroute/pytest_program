@@ -15,4 +15,5 @@ import pytest
 from base.BaseCase import BaseCase, basecase
 from base.BasePage import BasePage
 class jenkins_Page(basecase):
-    def goto
+    def goto_task(self):
+        pass

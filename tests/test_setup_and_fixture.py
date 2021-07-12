@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 """
-@File   :   test_ttt.py 
+@File   :   test_setup_and_fixture.py
 @Time   :   2021/6/15 21:34   
 @Contact    :      
 @Author     :   WG
@@ -12,14 +12,15 @@ import pytest
 
 from tests.tests_wg import Testwg
 
-
+"""
+    先执行fixture后执行父类setup,再执行子类setup
+"""
 class Testwgg(Testwg):
     # def __init__(self):
     #     print("init")
 
     @pytest.fixture(scope='class',autouse=True)
     def fixture_first(self):
-        self._func1()
         print("fixture1")
     #
     def setup(self):
@@ -32,7 +33,6 @@ class Testwgg(Testwg):
 
     def _func2(self):
         # print(self.__class__)
-        self._func1()
         print("testwgg")
 
 

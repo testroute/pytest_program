@@ -8,6 +8,7 @@
 @Version    :   v 0.1
 @Desc  :
 """
+import os
 import time
 
 import pytest
@@ -23,12 +24,25 @@ class basecase(BaseCase):
     log = MyLogger.logger
     __token = _read_param('token')
 
-    def setUp(self):
-        super(basecase, self).setUp()
-        # <<< 如果只验证 以下页面可以直接setup中登陆>>>
-        self.open("http://47.110.37.80:8088/#/")
-        js = 'window.localStorage.setItem("token","a343aa1d900416d2c87731ece1db3843")'
-        self.execute_script(script=js)
+    # 针对测试类的每个用例前都会执行，不使用与方法
+    def setUp(self, *args):
+        super(basecase, self).setUp(*args)
+        THIS_URL = os.getenv('TEMP_URL', 'http://47.110.37.80:8088/#/')
+        self.open(THIS_URL)
+        __token = _read_param('token')
+        if _confirmLogin(__token):
+            js = 'window.localStorage.setItem("token","%s")' % __token
+            self.execute_script(script=js)
+        else:
+            __token = _update_token_and_return()
+            js = 'window.localStorage.setItem("token","%s")' % __token
+            self.execute_script(script=js)
+        # print("setup++++++++++:",time.time())
+
+
+
+
+        # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
     #
     # def tearDown(self):
     #     self.save_teardown_screenshot()
@@ -43,4 +57,20 @@ class basecase(BaseCase):
     #     super(basecase, self).tearDown()
 
 
+    def run_steps(self, path, operation):
+        with open(path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        steps = data[operation]
+        for step in steps:
+            if step['action'] == "find_and_click":
+                self.find_and_click(step['locator'])
 
+            elif step['action'] == "send":
+                # print(step['locator'], step['key'])
+                self.send(step['locator'], step['key'])
+
+            elif step['action'] == "scroll_find_click":
+                self.scroll_find_click(step['locator'])
+
+            elif step['action'] == "find_and_get_text":
+                self.find_and_get_text(step['locator'])
