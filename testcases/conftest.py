@@ -28,17 +28,15 @@ log = MyLogger.logger
 
 # 特殊hook类fixture不需要在测试用例处调用，系统会自动识别并调用
 # 所有函数前调用
-from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param,_confirm_scope
+from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param
 
 
-def pytest_runtest_setup():
-    #所有pytest收集来的测试用例前执行
-
-    print("conftest.pytest_runtest_setup")
-    # token = _get_token()
-
-def pytest_fixture_setup():
-    print("conftest.pytest_fixture_setup:",time.time())
+# def pytest_runtest_setup():
+#     #所有pytest收集来的测试用例前执行
+#     print("conftest.pytest_runtest_setup")
+#
+# def pytest_fixture_setup():
+#     print("conftest.pytest_fixture_setup:",time.time())
 
 
 # 扩展命令行参数
@@ -70,7 +68,7 @@ def set_driver(request):
                 cls.execute_script(script=js)
 
         def login_by_cookie(self):
-            print("login by cookie")
+            print("%s : have no cookie ,todo" %self.__class__)
     # print("request.node:",request.node)
     # print( request.node.items[0].getparent(pytest.Class))
     # print( request.node.items[0].getparent(pytest.Class).obj)

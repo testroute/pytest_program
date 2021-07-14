@@ -17,24 +17,7 @@ import time
 ## 重新加载sys，调用setdefaultencoding，打印信息以指定编码格式显示
 ################################################################################################
 
-
-
-'''
-import  os
-#获取文件路径（上一级）
-print(os.path.dirname(r'D:\自动化工程\crmcustomized\log.py'))
-#返回目录路径（再上一级）
-print(os.path.join(os.path.dirname( os.path.dirname(r'D:\自动化工程\crmcustomized\log.py'))))
-#拼接目录与文件log
-print(os.path.join(os.path.dirname( os.path.dirname(r'D:\自动化工程\crmcustomized\log.py')), 'logs'))
-str1='1234321'
-str2='1234512'
-#strip不区分文字顺序（12、21）
-print(str1.strip('12'))
-print(str2.strip('12'))
-'''
 logfile_dir = os.path.join(os.path.dirname( os.path.dirname(__file__)), 'logs')
-#print ("logfile_dir:",logfile_dir )
 if not os.path.exists(logfile_dir):
     os.makedirs(logfile_dir)
 
@@ -61,18 +44,19 @@ dictLogConfig = {
                     'selectdb_handler': { 
                         'level':'DEBUG',
                         'class':'logging.handlers.RotatingFileHandler',
-                        'filename':os.path.join(logfile_dir,'handler_%s.log'%(  logging_current_time ) ),
+                        'filename':os.path.join(logfile_dir,'main_%s.log'%(  logging_current_time ) ),
                         #若是添加如下两项配置，日志不能重写，每次都是追加
                         #'maxBytes': 1024*1024*5,
                         #'backupCount': 5,
                         'formatter':'myFormatter',
                         #w为每次重写，a是追加
                         'mode':'a',
+                        "encoding":"utf-8"
                         },
                     'error_handler': {
                         'level':'DEBUG',
                         'class':'logging.handlers.RotatingFileHandler',
-                        'filename':os.path.join(logfile_dir,'result_%s.log'%(  logging_current_time ) ),
+                        'filename':os.path.join(logfile_dir,'error_%s.log'%(  logging_current_time ) ),
                         #若是添加如下两项配置，日志不能重写，每次都是追加
                         #'maxBytes': 1024*1024*5,
                         #'backupCount': 5,

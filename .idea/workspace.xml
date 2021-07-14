@@ -20,7 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0712">
+      <change afterPath="$PROJECT_DIR$/base/base_case.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/page_data/main.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/page_data/task.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main_2021-07-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/task_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_jenkins_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/BasePage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/MyLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/MyLogger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/datas/page_data/jenkins.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-08.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_2021-07-13.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_2021-07-14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main_2021-07-14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jenkins_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_my_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_my_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_not_use_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/setup_use_fixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/setup_use_fixture.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +81,13 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_inherit.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas/page_data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\datas\page_data" />
+      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\pages" />
       <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases" />
       <recent name="F:\pycharm\pytest_program\common" />
     </key>
@@ -73,7 +97,7 @@
       <recent name="F:\pycharm\pytest_program" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_my_test.TestClass.test_basics">
+  <component name="RunManager" selected="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task">
     <configuration name="CommonFuncs" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,19 +134,67 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for setup_use_fixture.Test.test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for main_page.main_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;setup_use_fixture.Test.test&quot;" />
+      <option name="_new_target" value="&quot;main_page.main_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_jenkins_page.TestJenkinsPage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_jenkins_page.TestJenkinsPage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_jenkins_page.TestJenkinsPage.test_goto_task&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_jenkins_page.test_jenkins_page.test_goto_task" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_jenkins_page.test_jenkins_page.test_goto_task&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -142,74 +214,26 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_my_test.test_request_sb_fixture" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_my_test.test_request_sb_fixture&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_setup_and_fixture.Test_wggg.test_func3" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_setup_and_fixture.Test_wggg.test_func3&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_my_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_my_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.CommonFuncs" />
       <item itemvalue="Python tests.Unittests in test_inherit.py" />
       <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
-      <item itemvalue="Python tests.pytest for test_my_test.test_request_sb_fixture" />
-      <item itemvalue="Python tests.pytest in test_my_test.py" />
-      <item itemvalue="Python tests.pytest for setup_use_fixture.Test.test" />
-      <item itemvalue="Python tests.pytest for test_setup_and_fixture.Test_wggg.test_func3" />
+      <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
+      <item itemvalue="Python tests.pytest for main_page.main_page" />
+      <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
+      <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
+        <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
         <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
-        <item itemvalue="Python tests.pytest for test_my_test.test_request_sb_fixture" />
-        <item itemvalue="Python tests.pytest for test_setup_and_fixture.Test_wggg.test_func3" />
-        <item itemvalue="Python tests.pytest for setup_use_fixture.Test.test" />
-        <item itemvalue="Python tests.pytest in test_my_test.py" />
+        <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
+        <item itemvalue="Python tests.pytest for main_page.main_page" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -312,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626086192991</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="0712">
+      <created>1626086396787</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626086396787</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,6 +402,11 @@
           <url>file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/unittest.py</url>
           <line>156</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/testcases/test_jenkins_page.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

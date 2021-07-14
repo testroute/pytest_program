@@ -10,7 +10,7 @@
 """
 import pytest
 
-from base.BaseCase import basecase
+from base.base_case import basecase
 from common.CommonFuncs import _read_param, _confirmLogin, _update_token_and_return
 
 

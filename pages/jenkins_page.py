@@ -12,8 +12,11 @@ import unittest
 
 import pytest
 
-from base.BaseCase import BaseCase, basecase
-from base.BasePage import BasePage
-class jenkins_Page(basecase):
+from base.base_case import BaseCase, MyBaseCase
+from pages.task_page import TaskPage
+
+
+class JenkinsPage(MyBaseCase):
     def goto_task(self):
-        pass
+        self.run_steps("../datas/page_data/jenkins.yaml", 'goto_task')
+        return TaskPage(self)
