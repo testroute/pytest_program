@@ -9,14 +9,9 @@
 @Desc   :   
 """
 from base.base_case import MyBaseCase
-from pages.main_page import MainPage
 
 
-class TestJenkinsPage:
-
-    def setup_class(self):
-        # 实例化 MainPage类
-        self.main = MainPage()
-
+class TestJenkinsPage(MyBaseCase):
     def test_goto_task(self):
+        self.main.goto_task()
         assert True

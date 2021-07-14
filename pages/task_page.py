@@ -14,10 +14,11 @@ import unittest
 import pytest
 
 from base.base_case import MyBaseCase
+from base.base_page import BasePage
 
 
-class TaskPage(MyBaseCase):
+class TaskPage(BasePage):
     def goto_main(self):
-        self.run_steps("../datas/page_data/main.yaml", 'goto_task')
-        from pages.jenkins_page import JenkinsPage
-        return JenkinsPage()
+        self.cls.run_steps("../datas/page_data/main.yaml", 'goto_task')
+        from pages.main_page import MainPage
+        return MainPage(self.cls)

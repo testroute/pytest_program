@@ -19,30 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0712">
-      <change afterPath="$PROJECT_DIR$/base/base_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/page_data/main.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/page_data/task.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main_2021-07-13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/task_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_jenkins_page.py" afterDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0714">
+      <change afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/BaseCase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/BasePage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/MyLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/MyLogger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/datas/page_data/jenkins.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-08.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_2021-07-13.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/handler_2021-07-12.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_2021-07-14.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main_2021-07-14.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/result_2021-07-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jenkins_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_my_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_my_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_not_use_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/setup_use_fixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/setup_use_fixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/page_data/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/page_data/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/main_2021-07-14.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main_2021-07-14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/task_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_jenkins_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +120,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for main_page.main_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for main_page.testMainPage.testgoto_main" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,7 +132,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page.main_page&quot;" />
+      <option name="_new_target" value="&quot;main_page.testMainPage.testgoto_main&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -219,17 +205,17 @@
       <item itemvalue="Python tests.Unittests in test_inherit.py" />
       <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
       <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
-      <item itemvalue="Python tests.pytest for main_page.main_page" />
       <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
       <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
+      <item itemvalue="Python tests.pytest for main_page.testMainPage.testgoto_main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
+        <item itemvalue="Python tests.pytest for main_page.testMainPage.testgoto_main" />
         <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
         <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
         <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
-        <item itemvalue="Python tests.pytest for main_page.main_page" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626086396787</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="0714">
+      <created>1626255546039</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626255546039</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +361,8 @@
     <MESSAGE value="0616" />
     <MESSAGE value="0619" />
     <MESSAGE value="0712" />
-    <option name="LAST_COMMIT_MESSAGE" value="0712" />
+    <MESSAGE value="0714" />
+    <option name="LAST_COMMIT_MESSAGE" value="0714" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -405,7 +399,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcases/test_jenkins_page.py</url>
-          <line>20</line>
+          <line>14</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>

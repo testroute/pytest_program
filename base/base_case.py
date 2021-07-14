@@ -27,10 +27,10 @@ class MyBaseCase(BaseCase):
     __token = None
     __need_login = True
 
-    def __init__(self, *args, **kwargs):
-        super(BaseCase, self).__init__(*args, **kwargs)
-        print("MyBaseCase",self.__class__)
-        
+    # def __init__(self, *args, **kwargs):
+    #     super(BaseCase, self).__init__(*args, **kwargs)
+    #     print("MyBaseCase",self.__class__)
+
     def setUp(self, *args):
         """
         针对测试类中的每个用例执行登录（已登录时不执行）；function testcase不执行。
@@ -49,13 +49,14 @@ class MyBaseCase(BaseCase):
         self.log.info("初始化url为：%s" % self._url)
         if self.__need_login:
             self._login()
+        from pages.main_page import MainPage
+        self.main = MainPage(self)
 
     def _login(self):
         self.open(self._url)
         self.__token = _update_token_and_return()
         js = 'window.localStorage.setItem("token","%s")' % self.__token
         self.execute_script(script=js)
-        # self.open(self._url.__add__('home/jenkins'))
         if self._reuse_session:
             self.__need_login = False
 
