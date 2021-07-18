@@ -19,16 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="0714">
-      <change afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/error_2021-07-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/handler_2021-07-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main_2021-07-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/result_2021-07-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/page_data/main.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/page_data/task.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/page_data/testcase.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/testcase_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_python/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_python/test_syscount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_program.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/common_datas.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/common_datas.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas/page_data/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/datas/page_data/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/main_2021-07-14.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main_2021-07-14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/page_data/jenkins.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page_data/jenkins.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/page_data/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/page_data/task.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jenkins_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/task_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/task_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_jenkins_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_jenkins_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_testcasepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/setup_use_fixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/setup_use_fixture.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,23 +82,25 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas/page_data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\datas\page_data" />
-      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\pages" />
-      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases" />
-      <recent name="F:\pycharm\pytest_program\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\pycharm\pytest_program\pages" />
       <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\tests" />
       <recent name="F:\pycharm\pytest_program\common" />
       <recent name="F:\pycharm\pytest_program" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\pycharm\pytest_program\pages" />
+      <recent name="F:\pycharm\pytest_program\datas\page_data" />
+      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\datas\page_data" />
+      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\pages" />
+      <recent name="C:\Users\Dmall-CD-Tech01\PycharmProjects\pytest_program\testcases" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task">
+  <component name="RunManager" selected="Python tests.pytest for test_testcasepage.TestTestcasePage.test_add_test">
     <configuration name="CommonFuncs" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,23 +137,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for main_page.testMainPage.testgoto_main" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page.testMainPage.testgoto_main&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_jenkins_page.TestJenkinsPage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_testcasepage.TestTestcasePage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +149,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_jenkins_page.TestJenkinsPage&quot;" />
+      <option name="_new_target" value="&quot;test_testcasepage.TestTestcasePage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_testcasepage.TestTestcasePage.test_add_test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,11 +165,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_jenkins_page.TestJenkinsPage.test_goto_task&quot;" />
+      <option name="_new_target" value="&quot;test_testcasepage.TestTestcasePage.test_add_test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_jenkins_page.test_jenkins_page.test_goto_task" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_testcasepage.TestTestcasePage.test_goto_main" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +181,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_jenkins_page.test_jenkins_page.test_goto_task&quot;" />
+      <option name="_new_target" value="&quot;test_testcasepage.TestTestcasePage.test_goto_main&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_my_test.TestClass.test_basics" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for testcases.test_testcasepage.TestJenkinsPage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pytest_program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,30 +197,46 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_my_test.TestClass.test_basics&quot;" />
+      <option name="_new_target" value="&quot;testcases.test_testcasepage.TestJenkinsPage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for testcases.test_testcasepage.TestJenkinsPage.test_goto_task" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytest_program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;testcases.test_testcasepage.TestJenkinsPage.test_goto_task&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.CommonFuncs" />
       <item itemvalue="Python tests.Unittests in test_inherit.py" />
-      <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
-      <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
-      <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
-      <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
-      <item itemvalue="Python tests.pytest for main_page.testMainPage.testgoto_main" />
+      <item itemvalue="Python tests.pytest for testcases.test_testcasepage.TestJenkinsPage.test_goto_task" />
+      <item itemvalue="Python tests.pytest for testcases.test_testcasepage.TestJenkinsPage" />
+      <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage" />
+      <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage.test_goto_main" />
+      <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage.test_add_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage.test_goto_task" />
-        <item itemvalue="Python tests.pytest for main_page.testMainPage.testgoto_main" />
-        <item itemvalue="Python tests.pytest for test_jenkins_page.TestJenkinsPage" />
-        <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
-        <item itemvalue="Python tests.pytest for test_jenkins_page.test_jenkins_page.test_goto_task" />
+        <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage.test_add_test" />
+        <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage.test_goto_main" />
+        <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage" />
+        <item itemvalue="Python tests.pytest for testcases.test_testcasepage.TestJenkinsPage.test_goto_task" />
+        <item itemvalue="Python tests.pytest for testcases.test_testcasepage.TestJenkinsPage" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -364,6 +381,48 @@
     <MESSAGE value="0714" />
     <option name="LAST_COMMIT_MESSAGE" value="0714" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1626601571647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626601571647" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1626601571646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626601571646" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1626601571646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626601571646" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1626601571647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626601571647" />
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1626519023521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626519023521" />
+    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1626519023521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626519023521" />
+    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1626519023521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626519023521" />
+    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1626519023521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626519023521" />
+    <state x="661" y="252" width="598" height="536" key="find.popup" timestamp="1626572503933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="252" width="598" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626572503933" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626570930618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626570930618" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -388,19 +447,19 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/conftest.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/venv/Lib/site-packages/_pytest/unittest.py</url>
           <line>156</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/test_jenkins_page.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/pages/jenkins_page.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/base/base_case.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

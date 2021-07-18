@@ -8,6 +8,8 @@
 @Version    :   v 0.1
 @Desc   :   
 """
+import os
+import sys
 import time
 import unittest
 
@@ -15,10 +17,14 @@ import pytest
 
 from base.base_page import BasePage
 from pages.task_page import TaskPage
+from pages.testcase_page import TestcasePage
 
 
 class MainPage(BasePage):
     def goto_task(self):
-        self.cls.run_steps("../datas/page_data/main.yaml", 'goto_task')
-        time.sleep(3)
+        self.cls.run_steps(self.main_path, 'goto_task')
         return TaskPage(self.cls)
+
+    def goto_test(self):
+        self.cls.run_steps(self.main_path, 'goto_test')
+        return TestcasePage(self.cls)

@@ -1,0 +1,7 @@
+goto_task:
+  - action: click
+    locator: //div[contains(text(),"任务管理")]
+
+goto_test:
+  - action: click
+    locator: //div[contains(text(),"用例管理")]

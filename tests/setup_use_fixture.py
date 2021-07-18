@@ -10,7 +10,7 @@
 """
 import pytest
 
-from base.base_case import basecase
+from base.base_case import MyBaseCase
 from common.CommonFuncs import _read_param, _confirmLogin, _update_token_and_return
 
 
@@ -49,7 +49,7 @@ def set_driver(request):
 
 
 
-class Test(basecase):
+class Test(MyBaseCase):
     @pytest.fixture(autouse=True)
     def setup_method_fixture(self, request, set_driver):
         self.login_class.login_by_token(self)
