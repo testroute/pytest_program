@@ -37,7 +37,7 @@ class MyBaseCase(BaseCase):
         对于function testcase实现登录可用fixture，参考testcases/test_my_test.py
         中的test_request_sb_fixture
         """
-        # <<< Run custom setUp() code for tests AFTER the super().setUp() >>>
+        # <<< Run custom setUp() code for z-lab AFTER the super().setUp() >>>
         super(MyBaseCase, self).setUp(*args)
         if self._env:
             self.log.info("当前环境为：%s" % self._env)
