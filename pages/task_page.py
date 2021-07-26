@@ -19,6 +19,7 @@ from base.base_page import BasePage
 
 class TaskPage(BasePage):
     def goto_main(self):
-        self.cls.run_steps("../datas/page_data/main.yaml", 'goto_task')
+        self.cls.run_steps(self.task_path, 'goto_task')
         from pages.main_page import MainPage
         return MainPage(self.cls)
+

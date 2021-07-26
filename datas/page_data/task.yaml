@@ -1,3 +1,0 @@
-goto_main:
-  - action: open
-    url: http://47.110.37.80:8088/#/

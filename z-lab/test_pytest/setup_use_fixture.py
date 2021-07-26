@@ -35,18 +35,18 @@ def set_driver(request):
 
         def login_by_cookie(self):
             print("login by cookie")
-
     # print("request.node:",request.node)
     # print( request.node.items[0].getparent(pytest.Class))
     # print( request.node.items[0].getparent(pytest.Class).obj)
-    try:  # 测试类中返回
-        # 需要for循环
+    try: #测试类中返回
+        #需要for循环
         request.node.items[0].getparent(pytest.Class).obj.login_class = login_class()
         # request.cls.login_class = login_class
         yield request.node.items[0].getparent(pytest.Class).obj.login_class
-    except:  # 测试方法中返回
+    except: #测试方法中返回
         login_class = login_class()
         yield login_class
+
 
 
 class Test(MyBaseCase):
@@ -54,6 +54,7 @@ class Test(MyBaseCase):
     def setup_method_fixture(self, request, set_driver):
         self.login_class.login_by_token(self)
         self.method_name = request.function.__name__
+
 
     def test(self):
         assert self.method_name == 'test'

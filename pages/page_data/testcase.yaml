@@ -1,0 +1,27 @@
+goto_task:
+  - action: click
+    locator: //div[contains(text(),"任务管理")]
+
+goto_main:
+  - action: click
+    locator: //div[contains(text(),"jenkins管理")]
+
+add_testcase:
+  - action: click
+    locator: //span[contains(text(),"添加用例")]
+
+input_casename:
+  - action: input
+    locator: //label[contains(text(),"用例名称")]/../input
+
+input_casetext:
+  - action: input
+    locator: //label[contains(text(),"输入文本信息")]/../textarea
+
+confirm:
+  - action: click
+    locator: //span[contains(text(),"确认")]
+
+cancel:
+  - action: click
+    locator: //span[contains(text(),"取消")]

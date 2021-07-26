@@ -9,6 +9,7 @@
 @Desc  :
 """
 import os
+import sys
 import time
 
 import pytest
@@ -51,16 +52,21 @@ class MyBaseCase(BaseCase):
             self._login()
         from pages.main_page import MainPage
         self.main = MainPage(self)
+        # print("after setup：", sys.getrefcount(self.main) )
 
     def _login(self):
         self.open(self._url)
         self.__token = _update_token_and_return()
         js = 'window.localStorage.setItem("token","%s")' % self.__token
         self.execute_script(script=js)
+        self.open(self._url.__add__('home/jenkins'))
         if self._reuse_session:
             self.__need_login = False
 
-    def run_steps(self, path, operation):
+    def run_steps(self, path, operation, key = None):
+        # print("运行路径：",os.path.abspath(__file__))
+        # print("当前class：",__class__)
+
         with open(path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
         steps = data[operation]
@@ -71,8 +77,8 @@ class MyBaseCase(BaseCase):
             elif step['action'] == "click":
                 self.click(step['locator'])
 
-            elif step['action'] == "sendkey":
-                self.send_keys(step['locator'], step['key'])
+            elif step['action'] == "input":
+                self.send_keys(step['locator'], key)
 
             elif step['action'] == "clicktext":
                 self.click_link_text(step['text'])
@@ -87,4 +93,6 @@ class MyBaseCase(BaseCase):
     # (Wrap unreliable tearDown() code in a try/except block.)
     # <<< Run custom tearDown() code BEFORE the super().tearDown() >>>
     # super(basecase, self).tearDown()
+
+
 

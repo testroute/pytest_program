@@ -1,0 +1,3 @@
+goto_task:
+  - action: click
+    locator: //div[contains(text(),"jenkins管理")]
