@@ -33,7 +33,7 @@ pytest
 - pages ====>> Page对象
 - requirements.txt ====>> 相关依赖包文件
 - testcases ====>> 测试用例
-- z-lab.myfrane ====>>
+- z-lab.myfrane ====>>仅依赖selenium/appnium搭建的web/app自动化框架
 
 ## 测试执行
 进入项目执行pytest testcase
