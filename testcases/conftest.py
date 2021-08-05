@@ -28,13 +28,16 @@ log = MyLogger.logger
 
 # 特殊hook类fixture不需要在测试用例处调用，系统会自动识别并调用
 # 所有函数前调用
-from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param
+from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_param,data_prepare
 
 
-# def pytest_runtest_setup():
-#     #所有pytest收集来的测试用例前执行
-#     print("conftest.pytest_runtest_setup")
-#
+def pytest_runtest_setup(item):
+    #所有pytest收集来的测试用例前执行
+    print(f"要执行用例的名称{item}")
+    if item:
+        data_prepare(item)
+
+
 # def pytest_fixture_setup():
 #     print("conftest.pytest_fixture_setup:",time.time())
 
@@ -50,7 +53,7 @@ from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_pa
 
 @pytest.fixture(scope="session")
 def set_driver(request):
-    # __is_cls_request=__is_session_request = False
+    # __is_cls_request=__is_session_request = Falsepytest_runtest_setup
 
     class login_class:
 

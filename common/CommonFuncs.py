@@ -16,6 +16,9 @@ import traceback
 import requests
 import yaml
 
+from base.db import session
+from base.models.test_case import TestCase
+
 
 def __getToken():
     """
@@ -133,7 +136,13 @@ def _confirm_scope(request):
         raise e
 
     return scope
-
+def data_prepare(casename):
+    casename = ["test1"]
+    if  casename == "test_add_test":
+        # 删除TestCase表中的数据，使用synchronize_session异步删除多条数据
+        session.query(TestCase).filter(TestCase.case_name in(casename)).delete(synchronize_session=False)
+    else:
+        pass
 
 if __name__ == '__main__':
     print(_read_param("token"))
