@@ -225,12 +225,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.CommonFuncs (1)" />
       <item itemvalue="Python.CommonFuncs" />
+      <item itemvalue="Python.CommonFuncs (1)" />
       <item itemvalue="Python tests.Unittests in F:/pycharm/pytest_program/tests/test_inherit.py" />
       <item itemvalue="Python tests.pytest for test_db.test_add" />
-      <item itemvalue="Python tests.pytest for test_my_test.TestClass" />
       <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
+      <item itemvalue="Python tests.pytest for test_my_test.TestClass" />
       <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage" />
     </list>
     <recent_temporary>
