@@ -19,32 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.allure_reports/0c0379f0-ea58-40d5-82b5-023bbfe65041-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/237479bc-2bfa-4e29-b3fa-0c6d99b9aec3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/23d87cb5-725b-4b6b-b429-9f920dcb9808-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/30afd8ca-af55-4978-8aba-3662ca8dfb4a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/3440c248-fe52-4d75-9acb-eb89a0c74f3f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/4ab32339-f6a5-4c42-92d1-733bac18caff-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/514b7bf6-03a7-42c9-b1c1-f75a06048dda-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/5b256595-ea64-48b7-8dde-ce54fc204fdb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/5b74135f-06ab-4b49-8139-477b889782e6-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/68edd068-e85f-4996-8c33-ff0c44cd246f-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/6e3ad8d6-4fec-427e-9642-375f1630ad00-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/7ab906b7-c9a8-4b85-a5b0-52782162a3bd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/7fed6138-0012-43c9-a119-a3235d618034-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/828970c2-1273-4f78-b5af-6bca17cb8da3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/8becbb4f-e1b2-4177-84ca-db6657d1fa09-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/8cbd8212-9d92-4835-80bf-2125a2b8de9f-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/9671b276-b96e-452c-b112-51c8326ac0ee-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/a6a9a3a6-f5ca-4fa8-933f-04faa7d3a99d-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/b345cba1-65a3-4950-8c00-90784cf1f19b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/c071b20f-9206-49d6-946d-7876176f170f-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/c6be768c-ad6c-404a-829b-cab21c1f0172-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/ce1d7070-dc15-4b4e-9959-cc84ea8bc24b-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/d5ef4bce-1d15-44e5-ad25-88ecb3209b7f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/e0a915c7-938a-4303-999d-e55348537e53-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.allure_reports/fe11ea0e-9743-4107-bd7a-4b4038b23fa5-attachment.txt" beforeDir="false" />
+    <list default="true" id="a98fb370-6135-45f4-870f-88e3b938af88" name="Default Changelist" comment="allure report">
+      <change afterPath="$PROJECT_DIR$/allure_reports/1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,12 +201,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.CommonFuncs" />
       <item itemvalue="Python.CommonFuncs (1)" />
+      <item itemvalue="Python.CommonFuncs" />
       <item itemvalue="Python tests.Unittests in F:/pycharm/pytest_program/tests/test_inherit.py" />
       <item itemvalue="Python tests.pytest for test_db.test_add" />
-      <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
       <item itemvalue="Python tests.pytest for test_my_test.TestClass" />
+      <item itemvalue="Python tests.pytest for test_my_test.TestClass.test_basics" />
       <item itemvalue="Python tests.pytest for test_testcasepage.TestTestcasePage" />
     </list>
     <recent_temporary>
@@ -381,7 +357,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628331353532</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="allure report">
+      <created>1628331929940</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1628331929940</updated>
+    </task>
+    <task id="LOCAL-00020" summary="allure report">
+      <created>1628332072977</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1628332072977</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,10 +407,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627000848906" />
-    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1628331351478">
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1628332171454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1628331351478" />
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1628332171454" />
     <state x="732" y="266" key="FileChooserDialogImpl" timestamp="1628328746135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -457,14 +447,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626519023521" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1628331355967">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1628332074860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628331355967" />
-    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628331881268">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628332074860" />
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628332606089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628331881268" />
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1628332606089" />
     <state x="661" y="252" width="598" height="536" key="find.popup" timestamp="1628329948242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
