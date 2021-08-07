@@ -53,4 +53,4 @@ allure serve ./report
 ```
 
 最终，可以看到测试报告的效果图如下：
-![image](https://user-images.githubusercontent.com/55448903/128596932-b83c31be-02e1-46c8-a8f2-935839dd02e8.png)
+![image](https://user-images.githubusercontent.com/55448903/128596967-c92497c9-e5b2-4994-a63d-15d2dd55524c.png)
