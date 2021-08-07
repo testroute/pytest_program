@@ -12,6 +12,7 @@ class Common_Funcs:
             data = yaml.safe_load(f)
             add_data = data['people']
             add_ids = data['myids']
+            print(add_data)
             return [add_data, add_ids]
 
 

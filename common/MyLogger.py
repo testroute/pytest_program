@@ -1,21 +1,18 @@
-# -*- coding: utf-8 -*- 
-'''
-Created on 2018年3月6日
-
-@author: yKF23456
-'''
-################################################################################################
-## 加载模块
-################################################################################################
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+"""
+@File   :   CommonFuncs.py
+@Time   :   2021/6/7 20:13
+@Contact    :
+@Author     :   WG
+@Version    :   v 0.1
+@Desc   : 日志配置文件控制台or错误日志记录
+"""
 import logging.config
 import sys
 import os
 import time
-## load local module
-#import basefunc
-################################################################################################
-## 重新加载sys，调用setdefaultencoding，打印信息以指定编码格式显示
-################################################################################################
+
 
 logfile_dir = os.path.join(os.path.dirname( os.path.dirname(__file__)), 'logs')
 if not os.path.exists(logfile_dir):

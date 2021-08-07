@@ -11,21 +11,27 @@
 import time
 
 import pytest
+from parameterized import parameterized
 
 from base.base_case import MyBaseCase
 
 #在setup里open，然后reuse
 # @pytest.mark.usefixtures("set_driver")
-class TestClass(MyBaseCase):
+from common.CommonFuncs import get_test_datas
 
-    def test_basics(self):
+
+class TestClass(MyBaseCase):
+    @parameterized.expand(get_test_datas("TestTestcasePage.yaml","test_add_test"))
+    #参数为双层中括号形式[[3, 3, 6],["1000", 1000, 2000]]
+    #默认test_basics_1形式表示用例名，其中第一个参数若为str类型，可以当作ids使用，此时用例名为est_basics_1__str
+    def test_basics(self,a,b,c):
         # # self.login_class.login_by_token(self)
         # #任务管理
         # url = "http://47.110.37.80:8088/#/home/jenkins"
         # self.open(url)
         # self.click(selector='//div[contains(text(),"任务管理")]')
         # time.sleep(1)
-        print("testcase:",time.time())
+        print("testcase:",a,b,c)
         assert 1==1
 
 

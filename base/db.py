@@ -6,7 +6,7 @@
 @Contact    :      
 @Author     :   WG
 @Version    :   v 0.1
-@Desc  :
+@Desc  :连接数据库，返回session
 """
 from urllib import parse
 
@@ -34,4 +34,4 @@ engine = create_engine(
 # 3.
 Session = sessionmaker(bind=engine)
 # 每次执行数据库操作时，都需要创建一个Connection
-session = Session().close()
+session = Session()

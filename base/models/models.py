@@ -26,10 +26,7 @@ class Users(Base):
     __tablename__ = 'users'  # 数据库表名称
     id = Column(Integer, primary_key=True)  # id 主键
     name = Column(String(32), index=True, nullable=False)  # name列，索引，不可为空
-    # email = Column(String(32), unique=True)
-    #datetime.datetime.now不能加括号，加了括号，以后永远是当前时间
-    # ctime = Column(DateTime, default=datetime.datetime.now)
-    # extra = Column(Text, nullable=True)
+
 
     __table_args__ = (
         # UniqueConstraint('id', 'name', name='uix_id_name'), #联合唯一

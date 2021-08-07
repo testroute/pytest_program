@@ -6,7 +6,7 @@
 @Contact    :      
 @Author     :   WG
 @Version    :   v 0.1
-@Desc   :   
+@Desc   : 提供page对象通用方法
 """
 import os
 import sys
@@ -15,6 +15,9 @@ from base.base_case import MyBaseCase
 
 
 class BasePage:
+    """
+
+    """
     def __init__(self,cls : MyBaseCase):
         self.cls = cls
         # print('object born id:%s' % str(hex(id(self))))
@@ -30,8 +33,3 @@ class BasePage:
         :return: None
         """
         self.cls = None
-
-    def _main_page_data_clear(self,key:str):
-        pass
-    def _testcase_data_clear(self,key:str):
-        pass

@@ -13,7 +13,9 @@ from base.db import Base
 
 
 class TestCase(Base):
-    '''配送信息'''
+    """
+    测试用例orm模型
+    """
     __tablename__ = 'hogwarts_test_case'
     id = Column(Integer, primary_key=True, autoincrement=True)
     case_data = Column(String(30), nullable=False, comment='测试用例内容')

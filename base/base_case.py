@@ -6,7 +6,7 @@
 @Contact    :      
 @Author     :   WG
 @Version    :   v 0.1
-@Desc  :
+@Desc  :basecase类，供测试用例继承，实现初始化
 """
 import os
 import sys
@@ -14,10 +14,8 @@ import time
 
 import pytest
 import yaml
-
 from common import MyLogger
 from seleniumbase.fixtures.base_case import BaseCase
-
 from common.CommonFuncs import _confirmLogin, _update_token_and_return, _read_url
 
 
