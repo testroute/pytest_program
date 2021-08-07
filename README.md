@@ -1,6 +1,6 @@
 # pytest_program
 
-本项目实现web自动化的技术选型：Python+SeleniumBase+Pytest+YAML+Allure ，主要是针对本人搭建的个人项目来开展的，项目实现了基于[conftest.set_driver](https://github.com/testroute/pytest_program/blob/main/testcases/conftest.py) or [setup](https://github.com/testroute/pytest_program/blob/main/base/base_case.py)填充cookie/token的自动登陆，[PO模型改造](https://github.com/testroute/pytest_program/tree/main/pages)，基于parameterized.expend的[数据驱动](https://github.com/testroute/pytest_program/blob/main/testcases/test_testcasepage.py)，基于conftest.pytest_runtest_setup的[数据清洗](https://github.com/testroute/pytest_program/blob/main/testcases/conftest.py)，基于allure的测试报告生成以及环境配置、拆分日志等功能。
+本项目实现web自动化的技术选型：Python+SeleniumBase+Pytest+YAML+Allure ，主要是针对本人搭建的个人项目来开展的，项目实现了基于[conftest.set_driver](https://github.com/testroute/pytest_program/blob/main/testcases/conftest.py) or [setup](https://github.com/testroute/pytest_program/blob/main/base/base_case.py)填充cookie/token的自动登陆，[PO模型改造](https://github.com/testroute/pytest_program/tree/main/pages)，基于parameterized.expend的[数据驱动](https://github.com/testroute/pytest_program/blob/main/testcases/test_testcasepage.py)，使用pytest_runtest_setup hook函数针对测试item的[数据清洗](https://github.com/testroute/pytest_program/blob/main/testcases/conftest.py)，基于allure的测试报告生成以及环境配置、拆分日志等功能。
 
 ## 项目说明
 
