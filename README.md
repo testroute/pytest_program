@@ -45,11 +45,9 @@ pytest
 - pytest -s testcases\test_testcasepage.py --alluredir allure_reports
 - allure generate allure_reports -o allure_results --clean
 - allure open -h 127.0.0.1 -p 8088 allure_results
-  在命令行执行命令：```pytest``` 运行用例后，会得到一个测试报告的原始文件，但这个时候还不能打开成HTML的报告，还需要在项目根目录下，执行命令启动 ```allure``` 服务：
 
 ```
 # 需要提前配置allure环境，才可以直接使用命令行
-allure serve ./report
 ```
 
 最终，可以看到测试报告的效果图如下：
