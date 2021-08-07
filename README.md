@@ -31,7 +31,8 @@ pytest
 - datas ====>> 测试数据文件管理
 - logs ====>> 日志文件存放地址
 - pages ====>> Page对象
-- requirements.txt ====>> 相关依赖包文件
+- requirements.txt ====>> 相allure open -h 127.0.0.1 -p 8883 allure_results
+关依赖包文件
 - testcases ====>> 测试用例
 - z-lab.myfrane ====>>仅依赖selenium/appnium搭建的web/app自动化框架
 
@@ -41,7 +42,9 @@ pytest
 
 
 ## 测试报告效果展示
-
+pytest -s testcases\test_testcasepage.py --alluredir allure_reports
+allure generate allure_reports -o allure_results --clean
+allure open -h 127.0.0.1 -p 8088 allure_results
 在命令行执行命令：```pytest``` 运行用例后，会得到一个测试报告的原始文件，但这个时候还不能打开成HTML的报告，还需要在项目根目录下，执行命令启动 ```allure``` 服务：
 
 ```

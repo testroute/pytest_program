@@ -1,4 +1,12 @@
  # -*- encoding: utf-8 -*-
 test_add_test:
-  - ["测试数字标题" ,123, "数字标题描述"]
-  - ["测试数字描述", "正常标题1", 123]
+#assert true场景
+  - ["char_title", "！@#！@", "字符标题描述"]
+  - ["normal_case", "正常标题", "字符标题描述"]
+  - ["alph_case", "normal title", "字符标题描述"]
+  - ["num_title", 123, "数字标题描述"]
+  - ["num_desc", "正常标题1", 123]
+  - ["implicated_title", "正常标题1", 123]
+  - ["char_desc","正常标题1","！@#！@"]
+  - ["block_input"," "," "]#应该不允许
+#  - ["测试注入","a\"union select @@basedir","b\""union select @@basedir"]

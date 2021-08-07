@@ -78,7 +78,7 @@ def _update_token_and_return():
     file_path = os.path.dirname(__file__).strip("common").__add__("datas\\common_datas.yaml")
     read_datas = read_yaml(file_path)
     datas = read_datas if read_datas else {"token":""}
-    print("datas:",datas)
+    # print("datas:",datas)
     with open(file_path, "w+", encoding="utf-8") as f:
         token = __getToken()
         try:
@@ -147,14 +147,15 @@ def data_prepare(testcase:str):
     """
     if testcase.__contains__("test_add_test"):
         datas = get_test_datas("TestTestcasePage.yaml","test_add_test")
-        casenames = ["正常标题1"]
-        casedatas = ["数字标题描述"]
-        # for casename in datas:
-        #     casenames.append(str(casename[1]))
-        #     casedatas.append(str(casename[2]))
-        print(f"casenames:{casenames};casedatas:{casedatas}")
+        casenames = []
+        casedatas = []
+        for casename in datas:
+            casenames.append(str(casename[1]))
+            casedatas.append(str(casename[2]))
+        # print(f"casenames:{casenames};casedatas:{casedatas}")
         session.query(TestCase).filter(TestCase.case_name.in_(casenames),TestCase.case_data.in_(casedatas)).delete(synchronize_session=False)
         # 删除TestCase表中的数据，使用synchronize_session异步删除多条数据
+        session.commit()
         session.close()
     else:
         pass

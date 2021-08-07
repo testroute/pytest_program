@@ -26,3 +26,19 @@ class TestTestcasePage(MyBaseCase):
         self.main.goto_test().goto_task()
         assert True
 
+    def test_assert_error(self):
+        assert 1==2
+
+    @pytest.mark.xfail
+    def test_assert_xfail(self):
+        #结果通过标记为xpass
+        a = "hello"
+        b = "helloworld"
+        assert a != b
+
+    @pytest.mark.xfail
+    def test1(self):
+        #结果不通过标记为xfail
+        a="hello"
+        b="helloworld"
+        assert a==b

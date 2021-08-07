@@ -22,8 +22,8 @@ from common.CommonFuncs import get_test_datas
 
 class TestClass(MyBaseCase):
     @parameterized.expand(get_test_datas("TestTestcasePage.yaml","test_add_test"))
-    #参数为双层中括号形式[[3, 3, 6],["1000", 1000, 2000]]
-    #默认test_basics_1形式表示用例名，其中第一个参数若为str类型，可以当作ids使用，此时用例名为est_basics_1__str
+    #参数为双层中括号形式[[3, 3, 6],["PyPI", "pypi.org", 'img[alt="PyPI"]']]
+    #默认test_basics_1形式表示用例名，其中第一个参数若为字母类型，可以当作ids使用，此时用例名为est_basics_1__str
     def test_basics(self,a,b,c):
         # # self.login_class.login_by_token(self)
         # #任务管理
