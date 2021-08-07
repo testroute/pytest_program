@@ -31,8 +31,7 @@ pytest
 - datas ====>> 测试数据文件管理
 - logs ====>> 日志文件存放地址
 - pages ====>> Page对象
-- requirements.txt ====>> 相allure open -h 127.0.0.1 -p 8883 allure_results
-关依赖包文件
+- requirements.txt ====>> 相关依赖包文件
 - testcases ====>> 测试用例
 - z-lab.myfrane ====>>仅依赖selenium/appnium搭建的web/app自动化框架
 
