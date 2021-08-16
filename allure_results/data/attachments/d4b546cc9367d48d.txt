@@ -1,2 +1,0 @@
-[32mINFO    [0m selectdb.logger:base_case.py:45 当前环境为：test
-[32mINFO    [0m selectdb.logger:base_case.py:48 初始化url为：http://47.110.37.80:8088/#/

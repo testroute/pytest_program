@@ -1,0 +1,15 @@
+test_testcasepage.py::TestTestcasePage::test_assert_error
+--------------------------------------------------------------------
+Last Page: http://47.110.37.80:8088/#/home/jenkins
+  Browser: chrome
+Timestamp: 1629129887  (Unix Timestamp)
+     Date: Tuesday, 17 August 2021
+     Time: 12:04:47 AM  (ÖÐ¹ú±ê×¼Ê±¼ä, UTC+08:00)
+--------------------------------------------------------------------
+Traceback: File "C:\Users\谭佳惠\AppData\Local\Programs\Python\Python36\lib\unittest\case.py", line 601, in run
+    testMethod()
+  File "F:\pycharm\pytest_program\testcases\test_testcasepage.py", line 30, in test_assert_error
+    assert 1==2
+Exception: assert 1 == 2
+  +1
+  -2
