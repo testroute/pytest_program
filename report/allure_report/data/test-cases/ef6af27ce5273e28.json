@@ -1,0 +1,109 @@
+{
+  "uid" : "ef6af27ce5273e28",
+  "name" : "test1",
+  "fullName" : "testcases.test_testcasepage.TestTestcasePage#test1",
+  "historyId" : "400cf22cf84f58e9f1e28a997a15b297",
+  "time" : {
+    "start" : 1629129723741,
+    "stop" : 1629129742446,
+    "duration" : 18705
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nAssertionError: assert 'hello' == 'helloworld'\n  - helloworld\n  + hello",
+  "statusTrace" : "self = <testcases.test_testcasepage.TestTestcasePage testMethod=test1>\n\n    @pytest.mark.xfail\n    def test1(self):\n        #结果不通过标记为xfail\n        a=\"hello\"\n        b=\"helloworld\"\n>       assert a==b\nE       AssertionError: assert 'hello' == 'helloworld'\nE         - helloworld\nE         + hello\n\ntestcases\\test_testcasepage.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "unittest_setUpClass_fixture_TestTestcasePage",
+    "time" : {
+      "start" : 1629129723694,
+      "stop" : 1629129723694,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nAssertionError: assert 'hello' == 'helloworld'\n  - helloworld\n  + hello",
+    "statusTrace" : "self = <testcases.test_testcasepage.TestTestcasePage testMethod=test1>\n\n    @pytest.mark.xfail\n    def test1(self):\n        #结果不通过标记为xfail\n        a=\"hello\"\n        b=\"helloworld\"\n>       assert a==b\nE       AssertionError: assert 'hello' == 'helloworld'\nE         - helloworld\nE         + hello\n\ntestcases\\test_testcasepage.py:44: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fcb27214a7ae79a8",
+      "name" : "log",
+      "source" : "fcb27214a7ae79a8.txt",
+      "type" : "text/plain",
+      "size" : 168
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "unittest_setUpClass_fixture_TestTestcasePage::0",
+    "time" : {
+      "start" : 1629129920533,
+      "stop" : 1629129920533,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_testcasepage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTestcasePage"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RD6RIJS"
+  }, {
+    "name" : "thread",
+    "value" : "8592-Thread-1"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_testcasepage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "ef6af27ce5273e28.json",
+  "parameterValues" : [ ]
+}

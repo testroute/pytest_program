@@ -1,0 +1,102 @@
+{
+  "uid" : "640219dc868113ae",
+  "name" : "test_add_test_2_alph_case",
+  "fullName" : "testcases.test_testcasepage.TestTestcasePage#test_add_test_2_alph_case",
+  "historyId" : "b4a833a73d468d117f4b99b23b38ce55",
+  "time" : {
+    "start" : 1629129776523,
+    "stop" : 1629129793236,
+    "duration" : 16713
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "unittest_setUpClass_fixture_TestTestcasePage",
+    "time" : {
+      "start" : 1629129723694,
+      "stop" : 1629129723694,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4e52bd3d454c2c4a",
+      "name" : "log",
+      "source" : "4e52bd3d454c2c4a.txt",
+      "type" : "text/plain",
+      "size" : 168
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "unittest_setUpClass_fixture_TestTestcasePage::0",
+    "time" : {
+      "start" : 1629129920533,
+      "stop" : 1629129920533,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_testcasepage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTestcasePage"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-RD6RIJS"
+  }, {
+    "name" : "thread",
+    "value" : "8592-Thread-1"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_testcasepage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "640219dc868113ae.json",
+  "parameterValues" : [ ]
+}
