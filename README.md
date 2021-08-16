@@ -36,7 +36,7 @@ pytest
 
 ## 测试执行
 进入项目执行pytest testcase
-或在[testcase](https://github.com/testroute/pytest_program/tree/main/testcases)下执行pytest test_my_test.py
+或在[根目录](https://github.com/testroute/pytest_program)下执行pytest test_my_test.py
 
 
 ## 测试报告效果展示
