@@ -23,8 +23,7 @@ pytest
 
 ## 项目结构
 
-- allure_reports ====>> allure 数据采集目录
-- allure_results ====>> html报告存放路径
+- reports ====>> allure 报告目录
 - base ====>> 基本类，包括继承于seleniumBase.basecase的和BasePage对象
 - common ====>> 通用方法存放地址
 - config ====>> 配置文件
