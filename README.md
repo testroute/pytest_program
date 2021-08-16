@@ -41,9 +41,8 @@ pytest
 
 
 ## 测试报告效果展示
-- pytest -s testcases\test_testcasepage.py --alluredir allure_reports
-- allure generate allure_reports -o allure_results --clean
-- allure open -h 127.0.0.1 -p 8088 allure_results
+- 根目录下执行python run_test.py
+
 
 ```
 # 需要提前配置allure环境，才可以直接使用命令行
